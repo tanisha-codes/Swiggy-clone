@@ -207,5 +207,139 @@ body {
     }
 }
 
+@media (max-width: 900px) {
 
+    .navbar {
+        padding: 20px 5%;
+    }
 
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero-content {
+        grid-template-columns: 180px minmax(0, 1fr) 180px;
+        gap: 12px;
+        padding: 50px 15px;
+    }
+
+    .hero-center h1 {
+        font-size: 26px;
+    }
+
+    .location-box {
+        width: 45%;
+    }
+
+    .search-box {
+        flex: 1;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .nav-links {
+        font-size: 12px;
+        gap: 10px;
+    }
+
+    .app-btn,
+    .signin-btn {
+        padding: 9px 12px;
+    }
+
+    .hero-center h1 {
+        font-size: 22px;
+    }
+
+    .service-card h2 {
+        font-size: 18px;
+    }
+}
+
+/* MOBILE FIX */
+@media screen and (max-width: 600px) {
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .logo img {
+        width: 130px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        font-size: 12px;
+    }
+
+    .app-btn,
+    .signin-btn {
+        padding: 9px 12px;
+    }
+
+    /* Hero section */
+    .hero-section {
+        min-height: auto;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    /* Hide side images on mobile */
+    .hero-left,
+    .hero-right {
+        display: none;
+    }
+
+    /* Heading */
+    .hero-center {
+        width: 100%;
+    }
+
+    .hero-center h1 {
+        font-size: 25px;
+        line-height: 1.4;
+        margin-bottom: 25px;
+    }
+
+    /* Search inputs */
+    .search-row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .location-box,
+    .search-box {
+        width: 100%;
+        flex: none;
+        height: 55px;
+    }
+
+    /* Service cards */
+    .services-section {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .service-card {
+        width: 100%;
+        height: 170px;
+    }
+}
