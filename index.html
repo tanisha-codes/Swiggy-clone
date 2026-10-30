@@ -5,37 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Food and Groceries</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg3o31yJ_HSaUOfIQNg5iXXkoAZOAMJk17r88V8MaGew&s=10"></a>
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link " href="#">Swiggy Corporate</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#">Partner with us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><button class="btn btn-outline-dark">Get the app <i class="fa-sharp fa-light fa-arrow-up-right"></i></button></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><button class="btn btn-dark">Sign in</button></a>
-            </li>
-        </ul>
-    </nav>
-    <div class="container">
-        <div class="b1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTacWb0_gIe-qRAaYUwCuopNUwui3u6q9Tpjdzif8uiuvbG-InPi8rsbw&s=10"></div>
-        <div class="b2">Order food & groceries. Discover best restaurants. Swiggy it!</div>
-        <div class="b3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR80AkmpAvdYcoKXH2w7K0lodpLa1MxcYyavvreVwRofSenGYU_AqicGpI&s=10"></div>
-    </div>
+
+    <header class="hero-section">
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="assets/swiggyLogo.jpg" alt="Swiggy Logo">
+            </a>
+            <div class="nav-links">
+                <a href="#">Swiggy Corporate</a>
+                <a href="#">Partner with us</a>
+                <a href="#" class="app-btn">Get the App ↗</a>
+                <a href="#" class="signin-btn">Sign in</a>
+            </div>
+        </nav>
+        <section class="hero-content">
+            <div class="hero-left">
+                <img src="assets/food-left.png" alt="Food illustration">
+            </div>
+
+            <div class="hero-center">
+                <h1>
+                    Order food & groceries.
+                    Discover best restaurants.
+                    Swiggy it!
+                </h1>
+                <div class="search-row">
+
+                    <div class="location-box">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <select name="location" id="location">
+                            <option value="" selected disabled>
+                                Enter your delivery location
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="search-box">
+                        <input type="text" placeholder="Search for restaurant, item or more">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <img src="assets/food-right.png" alt="Food illustration">
+            </div>
+
+        </section>
+    </header>
+
+    <section class="services-section">
+        <div class="service-card">
+
+            <h2>FOOD DELIVERY</h2>
+
+            <p>FROM RESTAURANTS</p>
+
+            <span>UPTO 60% OFF</span>
+
+            <img src="assets/food-delivery.png" alt="Food Delivery">
+
+            <div class="arrow">→</div>
+
+        </div>
+
+        <div class="service-card">
+
+            <h2>INSTAMART</h2>
+
+            <p>INSTANT GROCERY</p>
+
+            <span>UPTO 60% OFF</span>
+
+            <img src="assets/instamart.png" alt="Food Delivery">
+
+            <div class="arrow">→</div>
+
+        </div>
+
+        <div class="service-card">
+
+            <h2>DINEOUT</h2>
+
+            <p>EAT OUT &amp; SAVE MORE</p>
+
+            <span>UPTO 60% OFF</span>
+
+            <img src="assets/dineout.png" alt="Food Delivery">
+
+            <div class="arrow">→</div>
+
+        </div>
+    </section>
+
 </body>
 </html>
 
